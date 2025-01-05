@@ -19,7 +19,7 @@ const initialState = {
     async (values) => {
       let {id} = values
         try {
-          const response = await axios.get(`/api/getMsg/${id}`, 
+          const response = await axios.post(`/api/getMsg`,{id}, 
             {
               withCredentials: true // Correct setting for axios
             }

@@ -22,7 +22,7 @@ function page() {
 useEffect(()=>{
 
     const fetchData = async () => {
-        const response = await axios.get(`/api/getuser/${params.id}`);
+        const response = await axios.post(`/api/getuser`,{ id: params.id});
         setUser(response.data.data);  // Assuming setUser is defined elsewhere
     }
         fetchData()
