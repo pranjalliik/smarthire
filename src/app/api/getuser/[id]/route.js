@@ -5,7 +5,7 @@ export async function GET(req , { params }) {
 
     const { id } = await params;
      console.log(id)
-    const userdata = await user.findOne({ _id: id });
+    const userdata = await user.findById({ _id : id });
 
    
     
