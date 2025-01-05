@@ -4,7 +4,7 @@ import { format, parseISO } from 'date-fns';
 import Image from 'next/image';
 function Profile({user}) {
   return (
-    <div className='w-full'>
+    <div className='w-full h-full md:h-96'>
           <div className="max-w-sm mx-auto p-6 bg-white shadow rounded-lg text-center">
       {/* Profile Image */}
       <div className="relative w-20 h-20 mx-auto mb-1">

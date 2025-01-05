@@ -14,9 +14,9 @@ function layout({children}) {
   
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col  md:h-screen">
     <Header/>
-      <div className="bg-pink-00 border-2 flex-grow mx-3 mb-2 rounded-lg border border-gray-300  grid grid-cols-4	 overflow-y-hidden">
+      <div className=" border-2 flex-grow mx-3 mb-2 rounded-lg border border-gray-300 flex flex-col md:grid grid-cols-4	 overflow-y-hidden">
         <Conversations/>
        {children}
       </div>

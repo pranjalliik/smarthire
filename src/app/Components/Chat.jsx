@@ -82,7 +82,7 @@ const groupedMessages = messages.reduce((acc, message) => {
 
 
   return (
-    <div className="col-span-2 	bg-gray-300 h-full relative bg-[url('https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg')] bg-repeat bg-fixed flex flex-col  overflow-y-auto">
+    <div className="col-span-2 	bg-gray-300 md:h-full h-[600px] relative bg-[url('https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg')] bg-repeat bg-fixed flex flex-col  overflow-y-auto">
 
     <div className="flex items-center justify-between bg-white p-4 shadow rounded-lg w-full mx-auto">
       {/* User Info */}
@@ -161,7 +161,7 @@ const groupedMessages = messages.reduce((acc, message) => {
                    {msg.text}
              </div>
              </div>
-             <div className='text-xs text-end text-gray-500'>{`${msg.time == 'loading' ? 'loading' : format(parseISO(msg.time), 'h:mm a')}`}</div>
+             <div className='text-xs text-start text-gray-500'>{`${msg.time == 'loading' ? 'loading' : format(parseISO(msg.time), 'h:mm a')}`}</div>
             
              </div> 
          

@@ -19,7 +19,7 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className='overflow-y-auto '>
+    <div className='overflow-y-auto md:h-full h-[400px]'>
        <div className='mx-1 pt-6 shadow-md'>
          <div className='flex justify-between mx-4 pb-8'>
         <div className='flex gap-x-4'>
